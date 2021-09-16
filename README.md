@@ -70,3 +70,5 @@
 
 `react-router-dom`에서 제공하며, `activeClassName`,`activeStyle`처럼 active상태에 대한 스타일 지정이 가능하다.<br/>
 Route의 path처럼 동작하기 때문에 exact가 있다.
+
+## JS로 라우팅 이동하기
