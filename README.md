@@ -60,3 +60,8 @@
 
 - NotFound <br/>
   `Route`에서 `path`를 작성하지 않으면 NotFound페이지가 연결된다.
+
+## JSX링크로 라우팅
+
+`<a>`태그를 통해 링크를 이동할 경우, 페이지가 다시 로딩되어서 적합하지 않다. <br/>
+`react-router-dom`에서 제공하는`<Link>`를 통해 사용한다.
