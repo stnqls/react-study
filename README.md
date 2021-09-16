@@ -82,3 +82,9 @@ Route의 path처럼 동작하기 때문에 exact가 있다.
 import { Redirect } from "react-router-dom";
 <Redirect to="/" />;
 ```
+
+## HOC(Higher Order Component)
+
+: 컴포넌트를 인자로 받아 새로운 컴포넌트를 리턴하는 함수이다. <br/>
+
+주의할점: render메소드 안에서 사용하지 않는다.<br/>
