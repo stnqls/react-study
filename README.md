@@ -65,3 +65,8 @@
 
 `<a>`태그를 통해 링크를 이동할 경우, 페이지가 다시 로딩되어서 적합하지 않다. <br/>
 `react-router-dom`에서 제공하는`<Link>`를 통해 사용한다.
+
+## NavLink
+
+`react-router-dom`에서 제공하며, `activeClassName`,`activeStyle`처럼 active상태에 대한 스타일 지정이 가능하다.<br/>
+Route의 path처럼 동작하기 때문에 exact가 있다.
