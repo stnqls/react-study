@@ -21,11 +21,32 @@
 
 ## Dynamic 라우팅
 
-```jsx
-// App.js
-// /profile/1
-<Route path="/profile" exact component={Profile} />
-<Route path="/profile/:id" component={Profile} />
-```
+1.  ```jsx
+    // App.js
+    // /profile/1
+    <Route path="/profile" exact component={Profile} />
+    <Route path="/profile/:id" component={Profile} />
+    ```
 
-넘어오는 `props.match.params.id`는 `String`형태이다.
+    넘어오는 `props.match.params.id`는 `String`형태이다.
+
+2.  ```js
+    // App.js
+    // /about/?name=mark (querystring) optional한 값이다.
+      <Route path="/about" component={About} />
+      <Route path="/about/?name=mark" component={About} />
+    ```
+
+- 브라우저내장객체 사용하기 (`URLSearchParams`)<br/>
+  : 지원하지 않는 브라우저도 있다.
+  ```js
+  const searchParams = props.location.search;
+  console.log(searchParams);
+  const obj = new URLSearchParams(searchParams);
+  console.log(obj.get("name"));
+  ```
+- `query-string` 사용하기
+  ```js
+  const searchParams = props.location.search;
+  const query = queryString.parse(searchParams);
+  ```
