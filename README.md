@@ -72,3 +72,5 @@
 Route의 path처럼 동작하기 때문에 exact가 있다.
 
 ## JS로 라우팅 이동하기
+
+- HOC방법 사용하기 : `withRouter`를 이용한다.
