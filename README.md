@@ -50,3 +50,13 @@
   const searchParams = props.location.search;
   const query = queryString.parse(searchParams);
   ```
+
+## Switch & NotFound
+
+- Switch <br/>
+  여러 Route중 순서대로 먼저 맞는 하나만 보여준다. <br/>
+  가장 마지막에 어디 `path`에도 맞지 않으면 보여지는 컴포넌트를 통해, NotFound페이지를 만들 수 있다.<br/>
+  **작은범위 -> 큰범위** 순서로 작성한다.
+
+- NotFound <br/>
+  `Route`에서 `path`를 작성하지 않으면 NotFound페이지가 연결된다.
