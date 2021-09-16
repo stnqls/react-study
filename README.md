@@ -18,3 +18,14 @@
 - 브라우저에서 요청한 경로에 Route의 path가 들어있으면 해당 component를 보여준다.
 
 `exact`을 사용하면, 완전히 똑같은 path와 url일 경우일때만 보여주게 된다.
+
+## Dynamic 라우팅
+
+```jsx
+// App.js
+// /profile/1
+<Route path="/profile" exact component={Profile} />
+<Route path="/profile/:id" component={Profile} />
+```
+
+넘어오는 `props.match.params.id`는 `String`형태이다.
