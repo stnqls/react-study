@@ -88,3 +88,16 @@ import { Redirect } from "react-router-dom";
 : 컴포넌트를 인자로 받아 새로운 컴포넌트를 리턴하는 함수이다. <br/>
 
 주의할점: render메소드 안에서 사용하지 않는다.<br/>
+
+## Controlled Component & Uncontrolled Component
+
+`input` `select` `textarea` : 상태를 가지고있는 엘리먼트 <br/>
+엘리먼트를 가지고 있는 컴포넌트가 상태를 관리 : `controlled` <br/>
+엘리먼트의 상태를 관리하지 않고, 엘리먼트의 참조만 컴포넌트가 소유 : `uncontrolled`
+
+```js
+    input 엘리먼틔의 현재 상태 값을 꺼내서 전송한다.
+    const input = document.querySelector("#my-input");
+    console.log(input);
+    // react에서는 지양하는 방식이다.
+```
