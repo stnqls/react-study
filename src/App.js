@@ -4,7 +4,10 @@ import Example3 from "./components/basicHooks/Example3";
 import Example4 from "./components/basicHooks/Example4";
 import Example5 from "./components/basicHooks/Example5";
 import Counter from "./components/basicHooks/Example";
+import useWindowWidth from "./hooks/useWindowWidth";
 function App() {
+  const width = useWindowWidth();
+
   return (
     <div className="App">
       {/* <Example1 />
@@ -13,6 +16,7 @@ function App() {
       <Example4 />
       <Example5 /> */}
       <Counter />
+      {width}
     </div>
   );
 }
