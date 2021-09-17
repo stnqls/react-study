@@ -1,13 +1,17 @@
-import Example1 from "./components/basicHooks/Example1";
-import Example2 from "./components/basicHooks/Example2";
-import Example3 from "./components/basicHooks/Example3";
-import Example4 from "./components/basicHooks/Example4";
-import Example5 from "./components/basicHooks/Example5";
+// import Example1 from "./components/basicHooks/Example1";
+// import Example2 from "./components/basicHooks/Example2";
+// import Example3 from "./components/basicHooks/Example3";
+// import Example4 from "./components/basicHooks/Example4";
+// import Example5 from "./components/basicHooks/Example5";
 import Counter from "./components/basicHooks/Example";
 import useWindowWidth from "./hooks/useWindowWidth";
-function App() {
-  const width = useWindowWidth();
+import withHasMounted from "./hocs/withHasMounted";
+import useHasMounted from "./hooks/useHasMounted";
 
+function App({ hasMounted }) {
+  const width = useWindowWidth();
+  const hasMountedFromHooks = useHasMounted();
+  console.log(hasMounted, hasMountedFromHooks);
   return (
     <div className="App">
       {/* <Example1 />
@@ -20,4 +24,4 @@ function App() {
     </div>
   );
 }
-export default App;
+export default withHasMounted(App);

@@ -211,3 +211,5 @@ function Example5() {
 
 `useEffect`는 여러개 사용가능하며, 순차적으로 실행된다. <br/>
 class형으로 작성된 `this.state`는 최신상태를 가리키도록 변경한다. (function과 다르다.)
+
+## Custom Hooks
