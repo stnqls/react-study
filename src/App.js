@@ -3,15 +3,16 @@ import Example2 from "./components/basicHooks/Example2";
 import Example3 from "./components/basicHooks/Example3";
 import Example4 from "./components/basicHooks/Example4";
 import Example5 from "./components/basicHooks/Example5";
-
+import Counter from "./components/basicHooks/Example";
 function App() {
   return (
     <div className="App">
-      <Example1 />
+      {/* <Example1 />
       <Example2 />
-      {/* <Example3 />
-      <Example4 /> */}
-      <Example5 />
+      <Example3 />
+      <Example4 />
+      <Example5 /> */}
+      <Counter />
     </div>
   );
 }
