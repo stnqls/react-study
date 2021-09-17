@@ -101,3 +101,46 @@ import { Redirect } from "react-router-dom";
     console.log(input);
     // react에서는 지양하는 방식이다.
 ```
+
+## State Hook
+
+- class
+
+```js
+class Example extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count = 0;
+    };
+  }
+  render(){
+    return (
+      <div>
+        <p>you clicked {count}times</p>
+        <button onClick={this.click}>click</button>
+      </div>
+    );
+  }
+  click = ()=> {
+    this.state({count: this.state.count + 1});
+  }
+}
+```
+
+- function
+
+```js
+function Example2() {
+  const [count, setCount] = React.useState(0); //useState로 초기화하기
+  return (
+    <div>
+      <p>you clicked {count} times</p>
+      <button onClick={click}>click</button>
+    </div>
+  );
+  function click() {
+    setCount(count + 1);
+  }
+}
+```
