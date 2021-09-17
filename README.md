@@ -104,6 +104,8 @@ import { Redirect } from "react-router-dom";
 
 ## State Hook
 
+`useState` : state를 대체 할 수 있다.
+
 - class
 
 ```js
@@ -144,3 +146,67 @@ function Example2() {
   }
 }
 ```
+
+## Effect Hook
+
+라이프 사이클 훅을 대체 할 수 있다.(`componentDidMount`, `componentDidUpdate`, `componentWillUnmount`)
+
+- class
+
+```js
+class Example4 extends React.Component {
+  state = { count: 0 };
+  render() {
+    const { count } = this.state;
+    return (
+      <div>
+        <h2>class 컴포넌트 ex4</h2>
+        <p>You clicked {count} times</p>
+        <button onClick={this.click}>Click me</button>
+      </div>
+    );
+  }
+  componentDidMount() {
+    console.log("componentDidMount", this.state.count);
+  }
+  componentDidUpdate() {
+    console.log("componentDidUpdate", this.state.count);
+  }
+  click = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+}
+```
+
+- function
+
+```js
+function Example5() {
+  const [count, setCount] = React.useState(0);
+
+  React.useEffect(() => {
+    console.log("componentDidMout", count);
+    return () => {
+      //cleanup
+      // dependency에의해 useEffect가 실행되기 직전에 실행된다. (componentWillUnmount의 역할)
+    };
+  }, []);
+
+  React.useEffect(() => {
+    console.log("componentDidMout & componentDidUpdate by count", count);
+  }, [count]); // count에 의해 실행된다.
+
+  return (
+    <div>
+      <h2>function 컴포넌트 ex5</h2>
+      <p>You clicked {count} times</p>
+      <button onClick={click}>Click me</button>
+    </div>
+  );
+  function click() {
+    setCount(count + 1);
+  }
+}
+```
+
+`useEffect`는 여러개 사용가능하며, 순차적으로 실행된다.
