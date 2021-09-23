@@ -6,13 +6,14 @@
 // import Counter from "./components/basicHooks/Example";
 // import useWindowWidth from "./hooks/useWindowWidth";
 import withHasMounted from "./hocs/withHasMounted";
-import useHasMounted from "./hooks/useHasMounted";
-import MouseTracker from "./components/MouseTracker";
+// import useHasMounted from "./hooks/useHasMounted";
+// import MouseTracker from "./components/MouseTracker";
+import CustomTextInput from "./components/CustomTextInput";
 
 function App({ hasMounted }) {
   // const width = useWindowWidth();
-  const hasMountedFromHooks = useHasMounted();
-  console.log(hasMounted, hasMountedFromHooks);
+  // const hasMountedFromHooks = useHasMounted();
+  // console.log(hasMounted, hasMountedFromHooks);
   return (
     <div className="App">
       {/* <Example1 /> */}
@@ -22,7 +23,8 @@ function App({ hasMounted }) {
       {/* <Example5 /> */}
       {/* <Counter /> */}
       {/* {width} */}
-      <MouseTracker />
+      {/* <MouseTracker /> */}
+      <CustomTextInput />
     </div>
   );
 }
