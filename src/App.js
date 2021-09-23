@@ -9,7 +9,8 @@ import withHasMounted from "./hocs/withHasMounted";
 // import useHasMounted from "./hooks/useHasMounted";
 // import MouseTracker from "./components/MouseTracker";
 import CustomTextInput from "./components/CustomTextInput";
-import AutoFocusTextInput from "./components/AutoFocusTextInput";
+// import AutoFocusTextInput from "./components/AutoFocusTextInput";
+import ValidationSample from "./components/ValidationSample";
 
 function App({ hasMounted }) {
   // const width = useWindowWidth();
@@ -27,6 +28,7 @@ function App({ hasMounted }) {
       {/* <MouseTracker /> */}
       <CustomTextInput />
       {/* <AutoFocusTextInput /> */}
+      <ValidationSample />
     </div>
   );
 }
