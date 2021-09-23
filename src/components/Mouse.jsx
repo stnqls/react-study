@@ -24,9 +24,7 @@ class Mouse extends React.Component {
         }}
         onMouseMove={this.handleMouseMove}
       >
-        <p>
-          The current mouse position is ({this.state.x}, {this.state.y})
-        </p>
+        {this.props.render(this.state)}
       </div>
     );
   }
