@@ -5,11 +5,12 @@ export default function Cat(props) {
   return (
     <div
       style={{
-        position: "absolute",
-        left: mouse.x,
-        top: mouse.y,
+        position: "sticky",
+        left: mouse.x - 25,
+        top: mouse.y - 25,
         width: "50px",
         height: "50px",
+        borderRadius: "50%",
         backgroundColor: "greenyellow",
       }}
     ></div>

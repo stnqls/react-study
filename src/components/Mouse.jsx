@@ -14,6 +14,8 @@ export default function Mouse(props) {
         height: "300px",
         width: "300px",
         backgroundColor: "lightblue",
+        margin: "0 auto",
+        position: "relative",
       }}
       onMouseMove={handleMouseMove}
     >
