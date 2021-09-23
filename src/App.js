@@ -11,6 +11,7 @@ import withHasMounted from "./hocs/withHasMounted";
 import CustomTextInput from "./components/CustomTextInput";
 // import AutoFocusTextInput from "./components/AutoFocusTextInput";
 import ValidationSample from "./components/ValidationSample";
+import ScrollBoxContainer from "./components/ScrollBoxContainer";
 
 function App({ hasMounted }) {
   // const width = useWindowWidth();
@@ -29,6 +30,7 @@ function App({ hasMounted }) {
       <CustomTextInput />
       {/* <AutoFocusTextInput /> */}
       <ValidationSample />
+      <ScrollBoxContainer />
     </div>
   );
 }
