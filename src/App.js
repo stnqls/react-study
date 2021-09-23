@@ -7,6 +7,7 @@ import Counter from "./components/basicHooks/Example";
 import useWindowWidth from "./hooks/useWindowWidth";
 import withHasMounted from "./hocs/withHasMounted";
 import useHasMounted from "./hooks/useHasMounted";
+import MouseTracker from "./components/MouseTracker";
 
 function App({ hasMounted }) {
   const width = useWindowWidth();
@@ -21,6 +22,7 @@ function App({ hasMounted }) {
       <Example5 /> */}
       <Counter />
       {width}
+      <MouseTracker />
     </div>
   );
 }

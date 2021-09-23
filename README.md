@@ -213,3 +213,5 @@ function Example5() {
 class형으로 작성된 `this.state`는 최신상태를 가리키도록 변경한다. (function과 다르다.)
 
 ## Custom Hooks
+
+이름은 반드시 `use`로 시작해야하며, 조건부 함수가 아니어야 한다.
