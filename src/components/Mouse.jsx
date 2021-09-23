@@ -11,8 +11,8 @@ export default function Mouse(props) {
   return (
     <div
       style={{
-        height: "600px",
-        width: "600px",
+        height: "300px",
+        width: "300px",
         backgroundColor: "lightblue",
       }}
       onMouseMove={handleMouseMove}
