@@ -215,3 +215,12 @@ class형으로 작성된 `this.state`는 최신상태를 가리키도록 변경�
 ## Custom Hooks
 
 이름은 반드시 `use`로 시작해야하며, 조건부 함수가 아니어야 한다.
+
+## Hook의 규칙
+
+최상위에서만 Hook을 호출해야한다.<br/>
+
+- 반복문, 조건문, 중첩된 함수 내에서 Hook을 사용하지 않아야한다.<br/>
+
+React 함수 컴포넌트에서 Hook을 호출한다. <br/>
+Custom Hook에서 Hook을 호출한다.
