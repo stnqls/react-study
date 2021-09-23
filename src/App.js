@@ -26,7 +26,7 @@ function App({ hasMounted }) {
       {/* {width} */}
       {/* <MouseTracker /> */}
       <CustomTextInput />
-      <AutoFocusTextInput />
+      {/* <AutoFocusTextInput /> */}
     </div>
   );
 }
