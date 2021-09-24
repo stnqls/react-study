@@ -17,6 +17,13 @@ class ScrollBoxContainer extends Component {
         >
           맨 밑으로
         </button>
+        <button
+          onClick={() => {
+            this.scrollBox.ScrollToTop();
+          }}
+        >
+          맨 위로
+        </button>
       </div>
     );
   }
