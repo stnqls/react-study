@@ -7,7 +7,7 @@
 // import useWindowWidth from "./hooks/useWindowWidth";
 import withHasMounted from "./hocs/withHasMounted";
 // import useHasMounted from "./hooks/useHasMounted";
-// import MouseTracker from "./components/MouseTracker";
+import MouseTracker from "./components/MouseTracker";
 import CustomTextInput from "./components/CustomTextInput";
 // import AutoFocusTextInput from "./components/AutoFocusTextInput";
 import ValidationSample from "./components/ValidationSample";
@@ -26,7 +26,7 @@ function App({ hasMounted }) {
       {/* <Example5 /> */}
       {/* <Counter /> */}
       {/* {width} */}
-      {/* <MouseTracker /> */}
+      <MouseTracker />
       <CustomTextInput />
       {/* <AutoFocusTextInput /> */}
       <ValidationSample />

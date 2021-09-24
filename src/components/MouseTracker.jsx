@@ -6,7 +6,7 @@ export default function MouseTracker() {
   return (
     <React.Fragment>
       <h1>Move the mouse around!</h1>
-      <Mouse render={(mouse) => <Cat mouse={mouse} />} />
+      <Mouse render={(move) => <Cat move={move} />} />
     </React.Fragment>
   );
 }
