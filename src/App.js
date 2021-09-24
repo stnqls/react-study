@@ -12,7 +12,7 @@ import CustomTextInput from "./components/CustomTextInput";
 // import AutoFocusTextInput from "./components/AutoFocusTextInput";
 import ValidationSample from "./components/ValidationSample";
 import ScrollBoxContainer from "./components/ScrollBoxContainer";
-import useWidth from "./hooks/useWidth";
+import ValidationSampleF from "./components/ValidationSampleF";
 
 function App({ hasMounted }) {
   const width = useWindowWidth();
@@ -32,6 +32,7 @@ function App({ hasMounted }) {
       {/* <AutoFocusTextInput /> */}
       <ValidationSample />
       <ScrollBoxContainer />
+      <ValidationSampleF />
     </div>
   );
 }
