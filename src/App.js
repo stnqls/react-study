@@ -4,7 +4,7 @@
 // import Example4 from "./components/basicHooks/Example4";
 // import Example5 from "./components/basicHooks/Example5";
 // import Counter from "./components/basicHooks/Example";
-// import useWindowWidth from "./hooks/useWindowWidth";
+import useWindowWidth from "./hooks/useWindowWidth";
 import withHasMounted from "./hocs/withHasMounted";
 // import useHasMounted from "./hooks/useHasMounted";
 import MouseTracker from "./components/MouseTracker";
@@ -12,9 +12,10 @@ import CustomTextInput from "./components/CustomTextInput";
 // import AutoFocusTextInput from "./components/AutoFocusTextInput";
 import ValidationSample from "./components/ValidationSample";
 import ScrollBoxContainer from "./components/ScrollBoxContainer";
+import useWidth from "./hooks/useWidth";
 
 function App({ hasMounted }) {
-  // const width = useWindowWidth();
+  const width = useWindowWidth();
   // const hasMountedFromHooks = useHasMounted();
   // console.log(hasMounted, hasMountedFromHooks);
   return (
@@ -25,7 +26,7 @@ function App({ hasMounted }) {
       {/* <Example4 /> */}
       {/* <Example5 /> */}
       {/* <Counter /> */}
-      {/* {width} */}
+      {width}
       <MouseTracker />
       <CustomTextInput />
       {/* <AutoFocusTextInput /> */}

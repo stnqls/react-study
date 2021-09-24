@@ -24,6 +24,20 @@ class ScrollBoxContainer extends Component {
         >
           맨 위로
         </button>
+        <button
+          onClick={() => {
+            this.scrollBox.scrollLeft();
+          }}
+        >
+          왼쪽
+        </button>
+        <button
+          onClick={() => {
+            this.scrollBox.scrollRight();
+          }}
+        >
+          오른쪽
+        </button>
       </div>
     );
   }

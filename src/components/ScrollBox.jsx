@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
 class ScrollBox extends Component {
+  scrollBox = React.createRef();
   ScrollToBottom = () => {
     const { scrollHeight, clientHeight } = this.box;
     this.box.scrollTop = scrollHeight - clientHeight;
-    console.log(this.box.scrollTop);
   };
 
   ScrollToTop = () => {
@@ -12,6 +12,23 @@ class ScrollBox extends Component {
       top: 0,
     });
   };
+
+  scrollLeft = () => {
+    this.box.scrollTo({
+      left: 0,
+    });
+  };
+
+  scrollRight = () => {
+    const move = this.innerBox.offsetWidth;
+    this.box.scrollTo({
+      left: move,
+    });
+  };
+
+  // scroll = (move) => {
+  //   this.box.scrollLeft = move;
+  // };
 
   render() {
     const style = {
@@ -22,7 +39,7 @@ class ScrollBox extends Component {
       position: "relative",
     };
     const innerStyle = {
-      width: "100%",
+      width: "650px",
       height: "650px",
       background: "linear-gradient(white,black)",
     };
@@ -33,7 +50,12 @@ class ScrollBox extends Component {
           this.box = ref;
         }}
       >
-        <div style={innerStyle}></div>
+        <div
+          style={innerStyle}
+          ref={(ref) => {
+            this.innerBox = ref;
+          }}
+        ></div>
       </div>
     );
   }
