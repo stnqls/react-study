@@ -12,8 +12,8 @@ import CustomTextInput from "./components/CustomTextInput";
 // import AutoFocusTextInput from "./components/AutoFocusTextInput";
 import ValidationSample from "./components/ValidationSample";
 import ScrollBoxContainer from "./components/ScrollBoxContainer";
-import ValidationSampleF from "./components/ValidationSampleF";
 
+import Example from "./components/carousel/Example";
 function App({ hasMounted }) {
   const width = useWindowWidth();
   // const hasMountedFromHooks = useHasMounted();
@@ -32,7 +32,7 @@ function App({ hasMounted }) {
       {/* <AutoFocusTextInput /> */}
       <ValidationSample />
       <ScrollBoxContainer />
-      <ValidationSampleF />
+      <Example />
     </div>
   );
 }

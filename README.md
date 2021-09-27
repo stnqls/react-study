@@ -224,3 +224,21 @@ class형으로 작성된 `this.state`는 최신상태를 가리키도록 변경�
 
 React 함수 컴포넌트에서 Hook을 호출한다. <br/>
 Custom Hook에서 Hook을 호출한다.
+
+## Carousel
+
+`React Slick`을 사용해서 carousel구현하기.
+
+1. npm을 통해 react slick 설치하기
+
+```bs
+$ npm install react-slick --save
+$ npm install slick-carousel --save
+```
+
+2. css파일 임포트하기
+
+```js
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+```
