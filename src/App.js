@@ -16,6 +16,7 @@ import ScrollBoxContainer from "./components/ScrollBoxContainer";
 import Example from "./components/carousel/Example";
 // import ButtonWithDropDown from "./components/dropdown/ButtonWithDropDown";
 import DropdownMenu from "./components/dropdown/DropdownMenu";
+import Dropdown from "./components/dropdown/Dropdown";
 
 function App({ hasMounted }) {
   const width = useWindowWidth();
@@ -37,7 +38,11 @@ function App({ hasMounted }) {
       <ScrollBoxContainer />
       <Example />
       {/* <ButtonWithDropDown /> */}
+
+      {/* function */}
       <DropdownMenu />
+      {/* class */}
+      <Dropdown />
     </div>
   );
 }
