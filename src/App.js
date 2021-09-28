@@ -14,6 +14,9 @@ import ValidationSample from "./components/ValidationSample";
 import ScrollBoxContainer from "./components/ScrollBoxContainer";
 
 import Example from "./components/carousel/Example";
+// import ButtonWithDropDown from "./components/dropdown/ButtonWithDropDown";
+import DropdownMenu from "./components/dropdown/DropdownMenu";
+
 function App({ hasMounted }) {
   const width = useWindowWidth();
   // const hasMountedFromHooks = useHasMounted();
@@ -33,6 +36,8 @@ function App({ hasMounted }) {
       <ValidationSample />
       <ScrollBoxContainer />
       <Example />
+      {/* <ButtonWithDropDown /> */}
+      <DropdownMenu />
     </div>
   );
 }
