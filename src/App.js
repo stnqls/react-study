@@ -18,6 +18,7 @@ import Example from "./components/carousel/Example";
 import DropdownMenu from "./components/dropdown/DropdownMenu";
 import Dropdown from "./components/dropdown/Dropdown";
 import FooterSaveButton from "./FooterSaveButton";
+import SaveButton from "./components/SaveButton";
 
 function App({ hasMounted }) {
   const width = useWindowWidth();
@@ -45,6 +46,7 @@ function App({ hasMounted }) {
       {/* class */}
       <Dropdown />
       <FooterSaveButton />
+      <SaveButton />
     </div>
   );
 }
