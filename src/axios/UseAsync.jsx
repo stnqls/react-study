@@ -27,7 +27,7 @@ function reducer(state, action) {
 
 // callback을 통해 api요청을 시작하고, deps의 값은 해당 함수안에서 사용하는 useEffect의 deps로 설정된다.
 
-function UseAsync(callback, deps = []) {
+function UseAsync(callback, deps = [], skip = false) {
   const [state, dispatch] = useReducer(reducer, {
     loading: false,
     data: null,
@@ -45,6 +45,7 @@ function UseAsync(callback, deps = []) {
   };
 
   useEffect(() => {
+    if (skip) return;
     fetchData();
   }, deps);
   return [state, fetchData];

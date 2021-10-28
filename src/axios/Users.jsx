@@ -24,7 +24,10 @@ function Users() {
         {users.map((user) => (
           <li
             key={user.id}
-            onClick={() => setUserId(user.id)}
+            onClick={() => {
+              setUserId(user.id);
+              console.log(user);
+            }}
             style={{ cursor: "pointer" }}
           >
             {user.username} ({user.name})
