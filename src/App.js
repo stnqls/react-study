@@ -1,19 +1,13 @@
-// import Users from "./axios/Users";
-// import Counter from "./reducer/Counter";
-import { BrowserRouter, Route } from "react-router-dom";
-import PostMain from "./components/post/PostMain";
-import PostView from "./components/post/PostView";
+import ImportComponent from "./book/ImportComponent";
+import LifecycleEx from "./book/LifecycleEx";
+import LifecycleEx2 from "./book/LifecycleEx2";
 
 function App() {
   return (
     <div className="App">
-      {/* <Users />
-      <Counter /> */}
-
-      <BrowserRouter>
-        <Route exact path="/postView/:no" component={PostView} />
-        <Route exact path="/" component={PostMain} />
-      </BrowserRouter>
+      <ImportComponent />
+      <LifecycleEx />
+      <LifecycleEx2 />
     </div>
   );
 }
