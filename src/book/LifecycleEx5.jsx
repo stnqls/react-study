@@ -37,4 +37,4 @@ export default LifecycleEx5;
 
 // componentDidMount()함수는 '생성'단계의 생명주기 함수 중 가장 마지막으로 실행된다.
 // setState()함수를 통해 state의 변경이 발생했기 때문에 '변경'단계의 생명주기 함수 shouldComponentUpdate()가 실행된다.
-// shouldComponentUpdate()는 boolean 유형의 데이터를 반환하는데, return값이 true일 경우에 render()함수를 한번 더 호출힌다.
+// shouldComponentUpdate()는 boolean 유형의 데이터를 반환하는데, return값이 true일 경우에 render()함수를 한번 더 호출한다.
