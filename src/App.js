@@ -1,17 +1,11 @@
-import ArrowFunc from "./book/ArrowFunc";
-// import ClassPrototype from "./book/ClassPrototype";
-// import Es6 from "./book/Es6";
-// import SpreadOperator from "./book/SpreadOperator";
-// import Variable from "./book/Variable";
+import ForEach from "./book/part1/ForEach";
+import Map from "./book/part1/Map";
 
 function App() {
   return (
     <div className="App">
-      {/* <Es6 />
-      <Variable />
-      <SpreadOperator />
-      <ClassPrototype /> */}
-      <ArrowFunc />
+      <ForEach />
+      <Map />
     </div>
   );
 }
