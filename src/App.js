@@ -1,22 +1,14 @@
 import "bootstrap/dist/css/bootstrap.css";
-import ReactstrapNavbar from "./book/part2/reactstrap/ReactstrapNavbar";
-import ReactstrapPagination from "./book/part2/reactstrap/ReactstrapPagination";
-import ReactstrapPopover from "./book/part2/reactstrap/ReactstrapPopover";
-import ReactstrapProgress from "./book/part2/reactstrap/ReactstrapProgress";
-import ReactstrapSpinner from "./book/part2/reactstrap/ReactstrapSpinner";
-import ReactstrapTab from "./book/part2/reactstrap/ReactstrapTab";
-import ReactstrapTable from "./book/part2/reactstrap/ReactstrapTable";
+import Basic from "./book/part2/sweetalert2/Basic";
+import Comfirm from "./book/part2/sweetalert2/Confirm";
+import Position from "./book/part2/sweetalert2/Position";
 
 function App() {
   return (
     <div className="App">
-      <ReactstrapNavbar />
-      <ReactstrapPagination />
-      <ReactstrapPopover />
-      <ReactstrapProgress />
-      <ReactstrapSpinner />
-      <ReactstrapTable />
-      <ReactstrapTab />
+      <Basic />
+      <Position />
+      <Comfirm />
     </div>
   );
 }
