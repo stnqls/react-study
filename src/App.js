@@ -1,13 +1,11 @@
-import Fragments from "./book/part2/Fragments";
-import ReactHook from "./book/part2/ReactHook";
-import ReturnMap from "./book/part2/ReturnMap";
+import "bootstrap/dist/css/bootstrap.css";
+
+import ReactstrapAlerts from "./book/part2/reactstrap/ReactstrapAlerts";
 
 function App() {
   return (
     <div className="App">
-      <ReactHook />
-      <Fragments />
-      <ReturnMap />
+      <ReactstrapAlerts />
     </div>
   );
 }
