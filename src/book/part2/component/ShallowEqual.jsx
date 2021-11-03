@@ -7,6 +7,7 @@ class ShallowEqual extends Component {
     this.state = { StateString: "react" };
   }
   shouldComponentUpdate(nextProps, nextState) {
+    //반환값이 true일때 render()함수를 실행시킨다.
     return !shallowEqualArrays(this.state, nextState);
   }
   componentDidMount() {
@@ -32,3 +33,6 @@ class ShallowEqual extends Component {
 }
 
 export default ShallowEqual;
+
+// shallow-equal 패키지는 pureComponent에서 state값의 변경을 비교하는 것과 동일한 기능을 하는 함수를 제공한다.
+// 문자열과 배열은 값만 비교하며, 객체는 참조값을 비교한다.
