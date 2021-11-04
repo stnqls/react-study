@@ -1,14 +1,12 @@
 import "bootstrap/dist/css/bootstrap.css";
-import Basic from "./book/part2/sweetalert2/Basic";
-import Comfirm from "./book/part2/sweetalert2/Confirm";
-import Position from "./book/part2/sweetalert2/Position";
+import FetchGet from "./book/part2/fetch,axios,promise/FetchGet";
+import FetchPost from "./book/part2/fetch,axios,promise/FetchPost";
 
 function App() {
   return (
     <div className="App">
-      <Basic />
-      <Position />
-      <Comfirm />
+      <FetchGet />
+      <FetchPost />
     </div>
   );
 }
