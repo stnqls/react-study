@@ -1,12 +1,18 @@
 import "bootstrap/dist/css/bootstrap.css";
-import FetchGet from "./book/part2/fetch,axios,promise/FetchGet";
-import FetchPost from "./book/part2/fetch,axios,promise/FetchPost";
+import AxiosGet from "./book/part2/fetch,axios,promise/AxiosGet";
+import AxiosPost from "./book/part2/fetch,axios,promise/AxiosPost";
+import CallbackFunc from "./book/part2/fetch,axios,promise/CallbackFunc";
+import Promise from "./book/part2/fetch,axios,promise/Promise";
+import PromiseCatch from "./book/part2/fetch,axios,promise/PromiseCatch";
 
 function App() {
   return (
     <div className="App">
-      <FetchGet />
-      <FetchPost />
+      <AxiosGet />
+      <AxiosPost />
+      <CallbackFunc />
+      <Promise />
+      <PromiseCatch />
     </div>
   );
 }
