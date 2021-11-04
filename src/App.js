@@ -1,18 +1,9 @@
-import "bootstrap/dist/css/bootstrap.css";
-import AxiosGet from "./book/part2/fetch,axios,promise/AxiosGet";
-import AxiosPost from "./book/part2/fetch,axios,promise/AxiosPost";
-import CallbackFunc from "./book/part2/fetch,axios,promise/CallbackFunc";
-import Promise from "./book/part2/fetch,axios,promise/Promise";
-import PromiseCatch from "./book/part2/fetch,axios,promise/PromiseCatch";
+import Ex1 from "./book/part2/fetch,axios,promise/Ex1";
 
 function App() {
   return (
     <div className="App">
-      <AxiosGet />
-      <AxiosPost />
-      <CallbackFunc />
-      <Promise />
-      <PromiseCatch />
+      <Ex1 />
     </div>
   );
 }
