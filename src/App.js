@@ -1,9 +1,14 @@
-import Ex1 from "./book/part2/fetch,axios,promise/Ex1";
+// import ItemList from "./reactList/ItemList";
+// import ReactList from "./reactList/ReactList";
+
+import EpisodeList from "./reactList/EpisodeList";
 
 function App() {
   return (
     <div className="App">
-      <Ex1 />
+      {/* <ReactList /> */}
+      {/* <ItemList /> */}
+      <EpisodeList />
     </div>
   );
 }
