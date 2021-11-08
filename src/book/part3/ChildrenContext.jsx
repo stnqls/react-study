@@ -6,7 +6,7 @@ class contextChildren extends React.Component {
     return (
       <Consumer>
         {(contextValue) => (
-          <button onClick={(e) => contextValue.setStateFunc("react200")}>
+          <button onClick={() => contextValue.setStateFunc("react200")}>
             {contextValue.name}_button
           </button>
         )}
