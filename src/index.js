@@ -3,13 +3,18 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 // import reportWebVitals from "./reportWebVitals";
-
+import { Provider } from "react-redux";
 import { createStore } from "redux";
 import reducers from "./book/part3/redux/reducers";
 
 const store = createStore(reducers);
 const listener = () => {
-  ReactDOM.render(<App store={store} />, document.getElementById("root"));
+  ReactDOM.render(
+    <Provider store={store}>
+      <App indexProp="react" />
+    </Provider>,
+    document.getElementById("root")
+  );
 };
 
 store.subscribe(listener);
