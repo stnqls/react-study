@@ -38,3 +38,4 @@ class Currying extends React.Component {
 export default Currying;
 
 //함수의 재사용성을 높이기 위해 함수 자체를 return하는 함수이다.
+//여러개의 인자를 가진 함수를 호출 할 경우, 파라미터의 수보다 적은 수의 파라미터를 인자로 받으면 누락된 파라미터를 인자로 받는 기법이다.
