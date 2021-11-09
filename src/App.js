@@ -1,14 +1,13 @@
 import React from "react";
-import CookieLoad from "./book/part3/reactCookies/CookieLoad";
-import CookieRemove from "./book/part3/reactCookies/CookieRemove";
-import CookieSave from "./book/part3/reactCookies/CookieSave";
+import { Route } from "react-router-dom";
+import ReactRouter from "./book/part3/reactRouterDom/ReactRouter";
+import ReactRouter2 from "./book/part3/reactRouterDom/ReactRouter2";
 
 function App() {
   return (
     <div>
-      <CookieSave />
-      <CookieLoad />
-      <CookieRemove />
+      <Route exact path="/" component={ReactRouter} />
+      <Route exact path="/reactRouter2" component={ReactRouter2} />
     </div>
   );
 }
