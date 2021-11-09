@@ -242,3 +242,43 @@ $ npm install slick-carousel --save
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 ```
+
+---
+
+## Redux
+
+`Actions` : 어플리케이션의 store(저장소)로 data를 보내는 방법이다. action의 type은 일반적으로 문자열 상수로 적의도며, 정의된 action type은 action creators를 통해 사용된다. <br/>
+
+```jsx
+const ADD_TODO = 'ADD_TODO' // action의 type을 정의
+function addTodo(text){
+  return (
+    type: ADD_TODO,
+    text
+  )
+}
+```
+
+`Reducers` : action을 통해 어떠한 행동을 정의 했다면, 그 결과 어플리케이션의 상태가 어떻게 바뀌는지 특정하게 되는 함수이다. (action의 type에 따라 변화된 state를 반환하게 된다. <br/>
+
+```jsx
+function todoApp(state = initialState, action) {
+  switch (action.type) {
+    case SET_VISIBILITY_FILTER:
+      return Object.assign({}, state, {
+        visibilityFilter: action.filter,
+      });
+    default:
+      return state;
+  }
+}
+```
+
+`Store` : action과 action에 따라 상태를 수정하는 reducer를 저장하는 어플리케이션에 있는 단 하나의 객체이다. <br/>
+store를 생성하고 reducer을 연결하여 어플리케이션에 연결하게 된다.
+
+```js
+import {createStore} from 'redux',
+import CodeApp from './reducers';
+let store = createStore(todoApp);
+```
