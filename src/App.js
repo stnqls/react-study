@@ -1,15 +1,25 @@
 import React from "react";
 import { Route } from "react-router-dom";
-import ReactRouter from "./book/part3/reactRouterDom/ReactRouter";
-import ReactRouter2 from "./book/part3/reactRouterDom/ReactRouter2";
 
-function App() {
-  return (
-    <div>
-      <Route exact path="/" component={ReactRouter} />
-      <Route exact path="/reactRouter2" component={ReactRouter2} />
-    </div>
-  );
+import Header from "./book/part4/Header/Header";
+import LoginForm from "./book/part4/LoginForm";
+import ReactThrottle from "./book/part4/ReactThrottle";
+import FloatingPopulationList from "./book/part4/Floating_population/FloatingPopulationList";
+import Footer from "./book/part4/Footer/Footer";
+
+import "./book/part4/css/new.css";
+
+class App extends React.Component {
+  render() {
+    return (
+      <div className="App">
+        <Header />
+        <Route exact path="/" component={LoginForm} />
+        <Route exact path="/Throttle" component={ReactThrottle} />
+        <Route path="/floatPopulationList" component={FloatingPopulationList} />
+        <Footer />
+      </div>
+    );
+  }
 }
-
 export default App;
